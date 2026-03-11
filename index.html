@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senpaii Kawaebii - ARC Farming & Aquaculture</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Senpaii Kawaebii Logo" class="logo-img">
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#training" class="nav-link">Training</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Senpaii Kawaebii</h1>
+            <h2 class="hero-subtitle-primary">Arc Farming & Aqua Venture</h2>
+            <p class="hero-subtitle">Your trusted partner in ARC lobster farming, training, and aquaculture consultancy. Experience the serenity of freshwater farming.</p>
+            <button class="cta-button" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">Explore Our Venture</button>
+        </div>
+        <!-- Subtle Crayfish SVG Silhouette -->
+        <div class="hero-crayfish-silhouette">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,10 C30,10 20,40 20,60 C20,80 40,90 50,90 C60,90 80,80 80,60 C80,40 70,10 50,10 Z M40,30 C45,25 55,25 60,30 M30,50 C35,45 65,45 70,50 M25,70 C30,65 70,65 75,70" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Pioneering Sustainable ARC Lobster Farming</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Senpaii Kawaebii Arc Farming & Aqua Venture is committed to revolutionizing aquaculture in the Philippines and beyond. We specialize in Australian Red Claw (ARC) lobster farming, supporting both established farmers and entrepreneurs entering the aquaculture industry.</p>
+                    <p>Our mission is to promote sustainable aquaculture practices while providing comprehensive support through consultancy, training, and high-quality supplies. We believe in empowering farmers with the knowledge and resources they need to succeed.</p>
+                    <p>With our expertise in water quality management, hatchery operations, and farming protocols, we ensure that every client receives the best guidance for a profitable and environmentally responsible aquaculture venture.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-fish"></i>
+                        <h3>Premium ARC Stock</h3>
+                        <p>High-quality craylings and broodstocks</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Expert Training</h3>
+                        <p>Professional aquaculture education</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainable Practices</h3>
+                        <p>Eco-friendly farming methods</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive Aquaculture Solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>ARC Farming Consultancy</h3>
+                    <p>Expert guidance on farm design, site selection, and operational management to optimize your ARC lobster farming venture.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eggs"></i>
+                    </div>
+                    <h3>ARC Hatchery & Production</h3>
+                    <p>State-of-the-art hatchery services producing healthy craylings and managing full production cycles.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-user"></i>
+                    </div>
+                    <h3>Aquaculture Training</h3>
+                    <p>Comprehensive training programs for new farmers and entrepreneurs in ARC farming techniques and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Water Quality Monitoring</h3>
+                    <p>Advanced testing and monitoring of physico-chemical parameters to ensure optimal water conditions for ARC populations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Farm Setup Assistance</h3>
+                    <p>Complete support in establishing your aquaculture facility from planning through infrastructure development.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>Continuous consultation and troubleshooting for all your aquaculture needs throughout your farming journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Premium Aquaculture Supplies & Stock</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-frog"></i>
+                    </div>
+                    <h3>Craylings</h3>
+                    <p>Healthy, high-quality juvenile ARC lobsters for stocking ponds and farms. Sourced from our certified hatchery.</p>
+                    <span class="product-badge">Premium Grade</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Broodstocks</h3>
+                    <p>Superior breeding ARC lobsters selected for optimal genetics. Perfect for establishing productive breeding populations.</p>
+                    <span class="product-badge">Elite Selection</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Consumable ARC Products</h3>
+                    <p>Specialized feeds, supplements, and growth-enhancing products designed specifically for ARC lobsters.</p>
+                    <span class="product-badge">Premium Quality</span>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Aquaculture Supplies</h3>
+                    <p>Complete range of equipment, water treatment products, and farm management supplies for optimal operations.</p>
+                    <span class="product-badge">Full Range</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training" id="training">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training Programs</h2>
+                <p>Develop Your Aquaculture Expertise</p>
+            </div>
+            <div class="training-content">
+                <div class="training-item">
+                    <div class="training-number">01</div>
+                    <h3>Beginner ARC Farming</h3>
+                    <p>Introduction to ARC lobster biology, basic farm setup, and operational fundamentals. Perfect for new entrepreneurs.</p>
+                </div>
+                <div class="training-item">
+                    <div class="training-number">02</div>
+                    <h3>Advanced Hatchery Management</h3>
+                    <p>In-depth training on breeding programs, larval development, and large-scale hatchery operations.</p>
+                </div>
+                <div class="training-item">
+                    <div class="training-number">03</div>
+                    <h3>Water Quality & Health Management</h3>
+                    <p>Expert training on monitoring water parameters, disease prevention, and maintaining farm health standards.</p>
+                </div>
+                <div class="training-item">
+                    <div class="training-number">04</div>
+                    <h3>Business & Marketing</h3>
+                    <p>Learn to manage aquaculture ventures profitably, including market analysis, pricing, and customer relations.</p>
+                </div>
+            </div>
+            <div class="training-cta">
+                <p>Ready to start your ARC farming journey?</p>
+                <button class="cta-button" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })">Inquire About Training</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lot 70, Blk 5, Prk 28, Ric Ville<br>
+                            Brgy San Jose, General Santos City<br>
+                            South Cotabato 9500, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@senpaiikawabii.com">info@senpaiikawabii.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+63">+63 (0) XXX-XXXX-XXX</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                        <div class="success-message" id="successMessage" style="display: none;">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h3>Visit Us</h3>
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Google Map Integration</p>
+                    <small>Embed your location here</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Senpaii Kawaebii</h4>
+                    <p>Arc Farming & Aqua Venture</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>General Santos City<br>South Cotabato, Philippines</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Senpaii Kawaebii Arc Farming & Aqua Venture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
